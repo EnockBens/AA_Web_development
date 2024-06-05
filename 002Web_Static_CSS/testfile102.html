@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+body{
+    background-color: rgb(194, 214, 66);
+    display: flex;
+   flex-direction: column;
+    height: 100vh;
+}
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+
+}
+header,footer{
+    position: sticky;
+    background-color: rgb(83, 214, 76);
+    color: chocolate;
+}
+header{
+    top:0;
+}
+footer{
+    bottom: 0;
+}
+main{
+    flex-grow: 1;
+}
+@media screen and (min-width:576px){
+    body{
+        background-color: rgb(144, 32, 32);
+    }
+    nav{
+        display: none;
+    }
+}
+@media screen and (min-width:768px){
+    body{
+        background-color: rgb(11, 157, 21);
+    }
+    nav{
+        display: none;
+    }
+}
+@media screen and (min-width:992px){
+    body{
+        background-color: rgb(11, 199, 193);
+    }
+    nav{
+        display: none;
+    }
+}
+@media screen and (min-width:1200px){
+    body{
+        background-color: rgb(244, 0, 0);
+    }
+    nav{
+        display: none;
+    }
+}
+@media screen and (min-width:1400px){
+    body{
+        background-color: rgb(11, 23, 157);
+    }
+    nav{
+        display: none;
+    }
+}
+    </Style>
+</head>
+<body>
+   <header>
+    <h1>Responsive Web Design</h1>
+    <nav>
+        <ul>
+            <li><a href="testfile101.html">TEST FILE1</a></li>
+            <li><a href="testfile102.html">TEST FILE2</a></li>
+        </ul>
+    </nav>
+   </header>
+    <main>main</main>
+    <footer>footer</footer>
+</body>
+</html>
